@@ -1,0 +1,1 @@
+### Exercício 2: Diferença de Valores  Cheque se o número 8 é diferente de 80 usando `!=`. Exiba no console: `"8 é diferente de 80"` caso a condição seja verdadeira.
