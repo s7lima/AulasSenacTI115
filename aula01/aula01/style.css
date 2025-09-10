@@ -1,0 +1,15 @@
+h1, h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font: size 22px;;
+    color: brown;
+}
+
+h3{
+    background-color: pink;
+    text-align: center;
+}
+
+a{
+    background-color: aqua;
+    list-style: none;
+}
