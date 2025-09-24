@@ -1,30 +1,18 @@
-// Crie um programa que exiba o dia da semana conforme o usuario digitar no prompt o numero correspondente. Caso ele digite 1 deve aparecer a mensagem o dia escolhido foi: "Domingo", se o usuario colocar algo diferente dos numeros de 1 a 7 aprsentar a mensagem "dia Invalido
-let semana = ["\n1-Domingo","2-Segunda","3-Terça","4-Quarta","5-Quinta","6-Sexta","7-Sábado"]
-let dia = parseInt(prompt(`Selecione um dia da Semana ${semana}`))
+//Pergunte ao usuario quem ele é usando switch, se for Usuario A, Usuario B ou Usuario C , dê boas vindas personalizadas, caso contrário diga que não é o usuario.
+let user = ["\n1-Usuario-A","2-Usuario-B","3-Usuario-C",]
+let usuario = parseInt(prompt(`Selecione um usuario ${user}`))
 
-switch (dia) {
-    case 1:"Domingo"
-        alert("Domingo")
+switch (usuario) {
+    case 1:"Usuario-A"
+        alert("Bem vindo Usuario A")
         break;
-    case 2:"Segunda"
-        alert("Segunda")
+    case 2:"Usuario-B"
+        alert("Bem vindo Usuario B")
         break;
-    case 3:"Terça"
-        alert("Terça")
+    case 3:"Usuario-C"
+        alert("Bem vindo Usuario C")
         break;
-    case 4:"Quarta"
-        alert("Domingo")
-        break;
-    case 5:"Quinta"
-        alert("Quinta")
-        break;
-    case 6:"Sexta"
-        alert("Sexta")
-        break;
-    case 7:"Sabado"
-        alert("Sabado")
-        break;
-
+        
     default:
         alert("Valor invalido")
         break;

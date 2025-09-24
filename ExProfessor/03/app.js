@@ -1,6 +1,10 @@
-//Escreva um programa que peça o usuario informar o primeiro nome, sobrenome e data de nascimentio. Armazene cada variavel em uma variavel diferente. Calcule a idade do usuario e retorne todas as informações solicitadas e se o usuario e maior ou menor de idade
+// 1 - Escrever um array com 4 posições de frutas
+// 2 - Perguntar ao usuario qual posição do array ele quer saber a fruta correspondente
+// 3 - Retornar a fruta correspondente em alert
 
-let nome = prompt("Digite seu primeiro nome");
-let sobrenome = prompt ("Digite seu sobrenome");
-let data = parseIntprompt("Digite sua data de nascimento");
+let fruta = ["Banana", "Maça", "Pera", "Kiwi"]
+
+let numero = parseInt(prompt("Digite um numero de 0 a 3"))
+
+alert(fruta[numero])
 

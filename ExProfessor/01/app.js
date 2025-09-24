@@ -1,12 +1,16 @@
-// Escreva um programa que solicite ao usuario um número. O programa deve apresentar a contagem regressiva deste número até zero. se número negativo ou igual a zero apresentar mensagem "escolha um número positivo""
+let usuario = parseInt(prompt("Quem eres tu???😲\n1-Cainan \n2-Bruno \n3-Labubu"));
 
-let num = parseInt(prompt("Digite um numero"));
+if (usuario == 1){
 
-if (num < 0) {
-        alert("Escolha um número positivo")
-    } else {
-        for (let i = 0; i <= num; i++) {
-            console.log(num-i);
-    
-        }
-    }
+    alert ("Bem-vienido Cainan");
+
+}else if (usuario == 2){
+
+    alert ("Bem vindo Bruno");
+}else if (usuario == 3){
+
+    alert ("Bem vindo labububbubu")
+
+}else{
+    alert("Usuario não existe !!!!!!!!!!!!!!!!!!!!!!!🤐")
+}
