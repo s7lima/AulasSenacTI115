@@ -30,8 +30,39 @@ Escreva uma função chamada calculador que retorna 2 numeros digitados pelos us
 let num1 = parseFloat(prompt("Digite o primeiro número"));
 let num2 = parseFloat(prompt("Digite o segundo número"));
 
-function calculadora(num1, num2){
-    return `Soma: ${num1 + num2}\nMultiplicação: ${num1 * num2}\nDivisão: ${num1 / num2}\nSubtração ${num1 - num2}`
+// function calculadora(num1, num2){
+//     return `Soma: ${num1 + num2}\nMultiplicação: ${num1 * num2}\nDivisão: ${num1 / num2}\nSubtração ${num1 - num2}`
+// }
+// alert(calculadora(num1,num2));
+
+
+if(!isNaN(num1) && !isNaN(num2)){
+    const resultado = calculadora(num1, num2)
+    alert(`
+        Soma: ${resultado.soma} \n
+        Subt: ${resultado.subtracao} \n
+        Mult: ${resultado.multiplicacao} \n
+        Divi: ${resultado.divisao} \n`
+    );
+}else{
+    alert("Digite apenas numeros")
+}
+let soma;
+function calculadora (num1, num2){
+
+    let resultadoDivisao;
+    if(num2 === 0){
+        resultadoDivisao ="Impossivel dividir por zero"
+    }else {
+        resultadoDivisao = num1 / num2
+    }
+    
+    return{
+        soma: num1 + num2,
+        subtracao: num1 - num2,
+        multiplicacao: num1 * num2,
+        divisao: resultadoDivisao
+    } 
 }
 
-alert(calculadora(num1,num2));
+
